@@ -3,8 +3,22 @@
 A tiny, secure, URL-friendly, unique string ID generator for ReasonML/OCaml,
 inspired by [`ai/nanoid`](https://github.com/ai/nanoid).
 
+**BuckleScript**
+
 ```reason
-TODO --- CODE SNIPPET EXAMPLE
+open NanoId
+
+let id = nanoid();
+Js.log(id); // "V1StGXR8_Z5jdHi6B-myT"
+```
+
+**Native**
+
+```ocaml
+open NanoId
+
+let id = nanoid();
+print_string id; // "V1StGXR8_Z5jdHi6B-myT"
 ```
 
 ### Why Re-Nano ID?
@@ -32,6 +46,10 @@ TODO: Describe use cases --- see this repo's wiki.
 ## Contributing
 
 TODO: Blurb about contributing
+
+### License
+
+`re-nanoid` is [MIT licensed](https://github.com/dylanirlbeck/re-nanoid/blob/master/LICENSE).
 
 ## References (TODO: consider removing before making public)
 
