@@ -18,7 +18,7 @@ Js.log(id); // "V1StGXR8_Z5jdHi6B-myT"
 open NanoId
 
 let id = nanoid();
-print_string id; // "V1StGXR8_Z5jdHi6B-myT"
+print_string(id); // "V1StGXR8_Z5jdHi6B-myT"
 ```
 
 ### Why Re-Nano ID?

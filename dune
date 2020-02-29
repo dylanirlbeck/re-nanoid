@@ -1,0 +1,4 @@
+(dirs shared native)
+(include_subdirs unqualified)
+(library
+  (name NanoId))

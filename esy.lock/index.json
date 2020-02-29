@@ -1,0 +1,33 @@
+{
+  "checksum": "0a3725c6e5c76fd051699c4bee01c960",
+  "root": "re-nanoid@link-dev:./package.json",
+  "node": {
+    "re-nanoid@link-dev:./package.json": {
+      "id": "re-nanoid@link-dev:./package.json",
+      "name": "re-nanoid",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": [ "bs-platform@7.1.1@d41d8cd9" ]
+    },
+    "bs-platform@7.1.1@d41d8cd9": {
+      "id": "bs-platform@7.1.1@d41d8cd9",
+      "name": "bs-platform",
+      "version": "7.1.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/bs-platform/-/bs-platform-7.1.1.tgz#sha1:ed4032de7ab15158c61d8994680a05393e3ddd74"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
