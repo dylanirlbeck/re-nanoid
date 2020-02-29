@@ -9,7 +9,7 @@ let rec generateId = (~size, ~currId: string, ~bytes: array('a)) => {
   | x =>
     generateId(
       ~size=size - 1,
-      ~currId=currId ++ String.make(1, urlChars.[bytes[size - 1] land 17]),
+      ~currId=currId ++ String.make(1, urlChars.[bytes[size - 1] land 63]),
       ~bytes,
     )
   };
