@@ -47,6 +47,13 @@ TODO: Describe use cases --- see this repo's wiki.
 
 TODO: Blurb about contributing
 
+### Testing
+
+In order to run the tests as they stand currently, open a new terminal window
+and run `yarn watch` to re-compile upon Reason file changes. In yet another
+window, run `yarn test` to watch for changes to compiled files and re-run the
+tests if changes are detected.
+
 ### License
 
 `re-nanoid` is [MIT licensed](https://github.com/dylanirlbeck/re-nanoid/blob/master/LICENSE).
