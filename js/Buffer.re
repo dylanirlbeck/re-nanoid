@@ -1,3 +1,3 @@
 type t;
 
-[@bs.val] external allocUnsafe: int => t = "Buffer.allocUnsafe";
+[@bs.val] external allocUnsafe: int => array('a) = "Buffer.allocUnsafe";

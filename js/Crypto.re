@@ -1,6 +1,6 @@
 type t;
 
 [@bs.module "crypto"]
-external randomFillSync: Buffer.t => Buffer.t = "randomFillSync";
+external randomFillSync: array('a) => array('a) = "randomFillSync";
 
-[@bs.module "crypto"] external randomBytes: int => Buffer.t = "randomBytes";
+[@bs.module "crypto"] external randomBytes: int => array('a) = "randomBytes";
