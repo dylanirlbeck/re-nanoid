@@ -1,4 +1,5 @@
 {
+  "name": "re-nanoid",
   "namespace": true,
   "sources": [
     {
@@ -8,12 +9,17 @@
     {
       "dir": "shared",
       "subdirs": true
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
     }
   ],
   "package-specs": {
-    "module": "es6",
+    "module": "commonjs",
     "in-source": true
   },
+  "bs-dev-dependencies": ["@glennsl/bs-jest"],
   "refmt": 3,
   "suffix": ".bs.js",
   "generate-merlin": true
