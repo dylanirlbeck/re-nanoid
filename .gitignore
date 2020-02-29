@@ -6,4 +6,4 @@
 node_modules
 /bin
 yarn-error.log
-
+.bsb.lock
