@@ -42,6 +42,13 @@ describe("Basic tests", () => {
     })
   );
 
+  /*  Expect.(*/
+  /*test("no collisions - one million", () => {*/
+  /*let setLength = checkForDuplicates(~numIds=1000000);*/
+  /*expect(setLength) |> toBe(1000000);*/
+  /*})*/
+  /*);*/
+
   Expect.(
     test("default id size is 21", () => {
       expect(String.length(nanoid())) |> toBe(21)
@@ -64,4 +71,17 @@ describe("URL chars", () => {
          )
     )
   )
+});
+
+describe("Custom alphabet", () => {
+  open! Expect.Operators;
+  Expect.(
+    test("no collisions - 2", () => {
+      let test = nanoid(~alphabet="0123456789", ());
+      Js.log(test);
+      let test2 = nanoid();
+      Js.log(test2);
+      expect(test) !== test2;
+    })
+  );
 });
