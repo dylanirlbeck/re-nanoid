@@ -1,8 +1,4 @@
-open Url;
-open Random;
-
-type t = string;
-
+// ~bytes should be of type Buffer.t, that's why this module is in js/
 let rec generateId = (~size, ~alphabet, ~currId: string, ~bytes: array('a)) => {
   switch (size) {
   | 0 => currId
@@ -14,9 +10,4 @@ let rec generateId = (~size, ~alphabet, ~currId: string, ~bytes: array('a)) => {
       ~bytes,
     )
   };
-};
-
-let nanoid = (~size=21, ~alphabet=urlChars, ()) => {
-  let bytes = random(~bytes=size);
-  generateId(~size, ~alphabet, ~currId="", ~bytes);
 };

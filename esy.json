@@ -1,0 +1,5 @@
+{
+  "esy": { "buildsInSource": "unsafe" },
+  "devDependencies": { "@opam/ocamlformat": "0.10", "ocaml": "4.07.x" },
+  "dependencies": { "@reason-native/rely": "^3.2.1" }
+}

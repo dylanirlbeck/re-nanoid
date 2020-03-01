@@ -1,0 +1,199 @@
+# /Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__dune-opam__c__2.3.1-21ee88a1/bin/dune build -p nano-id-test
+# OCAMLPARAM: unset
+# Workspace root: /Users/dylanirlbeck/Code/re-nanoid/test/lib
+$ /usr/local/bin/nproc > /var/folders/pr/xx547jjd6y3fscmzq65g649c0000gn/T/dune0f4a34.output 2> /dev/null
+# Auto-detected concurrency: 12
+# disable binary cache
+$ /Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-e7aab25a/bin/ocamlfind printconf path > /var/folders/pr/xx547jjd6y3fscmzq65g649c0000gn/T/dunec468ff.output
+$ /Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlc.opt -config > /var/folders/pr/xx547jjd6y3fscmzq65g649c0000gn/T/dunef515a8.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some
+#        External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/lib/ocaml"
+#  ; ocaml_bin =
+#      External
+#        "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Users/dylanirlbeck/Code/re-nanoid/test/lib/_build/default"
+#        ; "MANPATH" :
+#            "/Users/dylanirlbeck/Code/re-nanoid/test/lib/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/dylanirlbeck/Code/re-nanoid/test/lib/_build/install/default/lib"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path =
+#      [ External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ocamlformat-opam__c__0.10-4e3e46a4/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.13.1-cab7a39e/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__cmdliner-opam__c__1.0.4-bd77fbff/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__dune-opam__c__2.3.1-21ee88a1/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__fpath-opam__c__0.7.2-2a501653/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.6.0-bc0edb90/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__octavius-opam__c__1.2.2-32c737b5/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.13.0-7270736f/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__uuseg-opam__c__12.0.0-c8490c07/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-35332c0d/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__dune_configurator-opam__c__2.3.1-5071429d/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.13.0-68b638c8/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__astring-opam__c__0.8.3-96d252d2/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-dd4b9a7d/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-e7aab25a/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-91e1c0f8/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__topkg-opam__c__1.0.1-564bf59f/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-e25ee589/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-95b99a6a/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__uucp-opam__c__12.0.0-e34560c9/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__dune_private_libs-opam__c__2.3.1-e5afd948/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__base_bytes-opam__c__base-b6186cd7/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__conf_m4-opam__c__1-45a7fa38/lib"
+#      ; External
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-e7aab25a/lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.07.1"
+#      ; standard_library_default =
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/lib/ocaml"
+#      ; standard_library =
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/lib/ocaml"
+#      ; standard_runtime =
+#          "/Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlrun"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = []
+#      ; cc_profile = [ "-pg" ]
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = false
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin19.0.0"
+#      ; target = "x86_64-apple-darwin19.0.0"
+#      ; profiling = true
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = false
+#      ; exec_magic_number = "Caml1999X023"
+#      ; cmi_magic_number = "Caml1999I024"
+#      ; cmo_magic_number = "Caml1999O023"
+#      ; cma_magic_number = "Caml1999A023"
+#      ; cmx_magic_number = "Caml1999Y023"
+#      ; cmxa_magic_number = "Caml1999Z023"
+#      ; ast_impl_magic_number = "Caml1999M023"
+#      ; ast_intf_magic_number = "Caml1999N023"
+#      ; cmxs_magic_number = "Caml1999D023"
+#      ; cmt_magic_number = "Caml1999T024"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I .NanoIdTest.objs/byte -no-alias-deps -o .NanoIdTest.objs/byte/nanoIdTest.cmo -c -impl nanoIdTest.ml-gen)
+$ (cd _build/default && /Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I .NanoIdTest.objs/byte -I .NanoIdTest.objs/native -intf-suffix .ml-gen -no-alias-deps -o .NanoIdTest.objs/native/nanoIdTest.cmx -c -impl nanoIdTest.ml-gen)
+$ (cd _build/default && /usr/local/bin/refmt --print binary TestFramework.re) > _build/default/TestFramework.re.ml
+$ (cd _build/default && /usr/local/bin/refmt --print binary MyFirstTest.re) > _build/default/MyFirstTest.re.ml
+$ (cd _build/default && /usr/local/bin/refmt --print binary RunTests.re) > _build/default/RunTests.re.ml
+$ (cd _build/default && /Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamldep.opt -modules -impl TestFramework.re.ml) > _build/default/.NanoIdTest.objs/TestFramework.re.ml.d
+> >> Fatal error: OCaml and preprocessor have incompatible versions
+> Fatal error: exception Misc.Fatal_error
+[2]
+$ (cd _build/default && /Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamldep.opt -modules -impl MyFirstTest.re.ml) > _build/default/.NanoIdTest.objs/MyFirstTest.re.ml.d
+> >> Fatal error: OCaml and preprocessor have incompatible versions
+> Fatal error: exception Misc.Fatal_error
+[2]
+$ (cd _build/default && /Users/dylanirlbeck/.esy/3____________________________________________________________/i/ocaml-4.7.1004-e5a2754f/bin/ocamldep.opt -modules -impl RunTests.re.ml) > _build/default/.RunTests.eobjs/RunTests.re.ml.d
+> >> Fatal error: OCaml and preprocessor have incompatible versions
+> Fatal error: exception Misc.Fatal_error
+[2]

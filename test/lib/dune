@@ -1,0 +1,17 @@
+(library
+   (name NanoIdTest)
+   (public_name nano-id-test.lib)
+   (ocamlopt_flags -linkall -g)
+   (libraries rely.lib )
+   (modules (:standard \ RunTests))
+)
+(executable
+  (package nano-id-test)
+  (name RunTests)
+  (public_name RunTests.exe)
+  (libraries
+    nano-id-test.lib
+    NanoId
+  )
+  (modules RunTests)
+)
