@@ -11,7 +11,7 @@ let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
 
 ### Why Re-Nano ID?
 
-**Fast**. It's 16% faster than UUID. TODO: Confirm this with OCaml's existing UUID package.
+**Fast**. It's 16% faster than UUID package.
 
 **Safe.** It uses cryptographically strong random APIs
 and guarantees a proper distribution of symbols.
