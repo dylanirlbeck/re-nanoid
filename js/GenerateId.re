@@ -25,7 +25,7 @@ let rec helperRec = (~i, ~size, ~step, ~alphabet, ~bytes, ~mask, ~currId) =>
     currId;
   } else {
     let offset = bytes[i] land mask;
-    offset > String.length(alphabet)
+    offset >= String.length(alphabet)
       ? helperRec(~i=i + 1, ~size, ~step, ~alphabet, ~bytes, ~mask, ~currId)
       : helperRec(
           ~i=i + 1,
@@ -34,7 +34,7 @@ let rec helperRec = (~i, ~size, ~step, ~alphabet, ~bytes, ~mask, ~currId) =>
           ~alphabet,
           ~bytes,
           ~mask,
-          ~currId=currId ++ String.make(1, alphabet.[bytes[i] land mask]),
+          ~currId=currId ++ String.make(1, alphabet.[offset]),
         );
   };
 
@@ -43,10 +43,8 @@ let rec generateIdWithCustomRec =
   let bytes = random(step);
   let newId =
     helperRec(~i=0, ~size, ~step, ~alphabet, ~bytes, ~mask, ~currId);
-  Js.log("ID");
-  Js.log(newId);
   String.length(newId) === size
-    ? currId
+    ? newId
     : generateIdWithCustomRec(~size, ~alphabet, ~mask, ~step, ~currId=newId);
 };
 
