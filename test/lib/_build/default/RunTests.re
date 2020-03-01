@@ -1,0 +1,1 @@
+NanoIdTest.TestFramework.cli();
