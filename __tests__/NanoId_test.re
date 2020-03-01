@@ -58,7 +58,10 @@ describe("Basic tests", () => {
 describe("URL chars", () => {
   Expect.(
     test("url chars are correct", () =>
-      expect(urlChars) |> toBe("-_0123456789abcABC")
+      expect(urlChars)
+      |> toBe(
+           "-_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+         )
     )
   )
 });
