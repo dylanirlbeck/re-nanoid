@@ -3,22 +3,10 @@
 A tiny, secure, URL-friendly, unique string ID generator for ReasonML/OCaml,
 inspired by [`ai/nanoid`](https://github.com/ai/nanoid).
 
-**BuckleScript**
-
 ```reason
 open NanoId
 
-let id = nanoid();
-Js.log(id); // "V1StGXR8_Z5jdHi6B-myT"
-```
-
-**Native**
-
-```ocaml
-open NanoId
-
-let id = nanoid();
-print_string(id); // "V1StGXR8_Z5jdHi6B-myT"
+let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
 ```
 
 ### Why Re-Nano ID?
@@ -35,30 +23,51 @@ See `ai/nanoid`'s [excellent documentation](https://github.com/ai/nanoid/blob/ma
 
 ## Usage
 
-TODO: Describe how to use in BuckleScript or Native project
+### Simple
 
-TODO: See the [Rust example](https://github.com/nikolay-govorov/nanoid/blob/master/README.md#usage)'s Usage section for more info about this --- `re-nanoid` will have different configurations that we need to document with explanations and code snippets.
+The main module uses URL-friendly symbols (`A-Za-z0-9_-`) and returns an ID with
+21 characters by default.
 
-## Use Cases
+```reason
+open NanoId
 
-TODO: Describe use cases --- see this repo's wiki.
+let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
+```
+
+### Custom length or alphabet
+
+If you want to reduce the ID size (and increase collision probability), you can
+pass the size as an argument. Likewise, if you want to use a different alphabet,
+you can pass the alphabet as a second argument.
+
+```reason
+open NanoId
+
+let alphabet = "#$@jasssfaª•¶";
+let size = 15;
+
+let id = nanoid(~size, ~alphabet, ());
+```
+
+> Note the use of the `()` as the last parameter of the function call.
 
 ## Contributing
 
-TODO: Blurb about contributing
+Pull requests are welcome!
 
-### Testing
+## Testing
+
+### BucklesScript - Jest
 
 In order to run the tests as they stand currently, open a new terminal window
 and run `yarn watch` to re-compile upon Reason file changes. In yet another
 window, run `yarn test` to watch for changes to compiled files and re-run the
 tests if changes are detected.
 
+### Native - Rely
+
+Native tests do not yet exist, but they should be present soon.
+
 ### License
 
 `re-nanoid` is [MIT licensed](https://github.com/dylanirlbeck/re-nanoid/blob/master/LICENSE).
-
-## References (TODO: consider removing before making public)
-
-- https://tech.ahrefs.com/how-to-write-a-library-for-bucklescript-and-native-22f45e5e946d
-- https://github.com/ahrefs/hello-native-bucklescript
