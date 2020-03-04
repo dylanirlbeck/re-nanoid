@@ -9,7 +9,7 @@ open NanoId
 let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
 ```
 
-### Why `re-nanoid`?
+### Why re-nanoid?
 
 **Fast**. It's 16% faster than UUID package.
 
