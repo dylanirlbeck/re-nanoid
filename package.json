@@ -1,9 +1,13 @@
 {
-  "name": "re-nanoid",
+  "name": "@dylanirlbeck/re-nanoid",
+  "private": false,
   "version": "0.0.1",
   "description": " A tiny, secure, URL-friendly, unique string ID generator for Reason/OCaml",
-  "repository": "https://github.com/dylanirlbeck/re-nanoid.git",
-  "author": "dylanirlbeck <irlbeck2@illinois.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylanirlbeck/re-nanoid"
+  },
+  "author": "dylanirlbeck <dylanirlbeck@gmail.com>",
   "license": "MIT",
   "keywords": [
     "reason",
@@ -14,14 +18,13 @@
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
-    "watch": "bsb -make-world -w",
-    "test": "jest --watchAll"
+    "watch": "bsb -make-world -w"
   },
   "devDependencies": {
-    "bs-platform": "7.1.1"
+    "bs-platform": "^7.2.2"
   },
   "peerDependencies": {
-    "nanoid": "^3.0.1"
-  },
-  "dependencies": {}
+    "nanoid": "^3.0.1",
+    "bs-platform": "^7.2.2"
+  }
 }

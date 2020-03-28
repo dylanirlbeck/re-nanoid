@@ -1,17 +1,12 @@
 {
   "name": "re-nanoid",
   "namespace": false,
-  "sources": [
-    {
-      "dir": "js",
-      "subdirs": true
-    }
-  ],
+  "sources": "js",
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
   "refmt": 3,
-  "suffix": ".bs.js",
-  "generate-merlin": true
+  "bsc-flags": ["-bs-no-version-header"],
+  "suffix": ".bs.js"
 }

@@ -1,7 +1,6 @@
 /_build
 /lib
 .merlin
-*.bs.js
 /_esy
 node_modules
 /bin
