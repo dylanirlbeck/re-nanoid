@@ -6,7 +6,7 @@ inspired by [`ai/nanoid`](https://github.com/ai/nanoid).
 ```reason
 open NanoId
 
-let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
+let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"W
 ```
 
 ### Why re-nanoid?
@@ -20,6 +20,27 @@ and guarantees a proper distribution of symbols.
 and has a similar number of unique IDs in just 21 symbols instead of 36.
 
 See `ai/nanoid`'s [excellent documentation](https://github.com/ai/nanoid/blob/master/README.md#table-of-contents) for more background about random identifier generation and comparisons with UUID v4.
+
+## Installation
+
+### BuckleScript
+
+```
+$ yarn add @dylanirlbeck/re-nanoid
+```
+
+Then add `@dylanirlbeck/re-nanoid` to your `bs-dependencies` in `bsconfig.json`
+
+```
+{
+   ...
+   "bs-dependencies": ["@dylanirlbeck/re-nanoid"]
+}
+```
+
+### Native
+
+Coming soon...
 
 ## Usage
 
