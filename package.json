@@ -18,10 +18,10 @@
     "test": "jest --watchAll"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.10",
     "bs-platform": "7.1.1"
   },
   "peerDependencies": {
     "nanoid": "^3.0.1"
-  }
+  },
+  "dependencies": {}
 }
