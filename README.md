@@ -1,4 +1,4 @@
-# Re-Nano ID
+# re-nanoid
 
 A tiny, secure, URL-friendly, unique string ID generator for ReasonML/OCaml,
 inspired by [`ai/nanoid`](https://github.com/ai/nanoid).
@@ -9,7 +9,7 @@ open NanoId
 let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
 ```
 
-### Why Re-Nano ID?
+### Why re-nanoid?
 
 **Fast**. It's 16% faster than UUID package.
 
@@ -71,3 +71,7 @@ Native tests do not yet exist, but they should be present soon.
 ### License
 
 `re-nanoid` is [MIT licensed](https://github.com/dylanirlbeck/re-nanoid/blob/master/LICENSE).
+
+### Other
+
+This library was born out of a project at HackIllinois 2020. See our Devpost submission [here](https://devpost.com/software/re-nanoid#updates)!
