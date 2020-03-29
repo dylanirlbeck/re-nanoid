@@ -44,10 +44,13 @@ Coming soon...
 
 ## Usage
 
+**As of now, the following examples work for BuckleScript. The Native library
+will be released soon.**
+
 ### Simple
 
 The main module uses URL-friendly symbols (`A-Za-z0-9_-`) and returns an ID with
-21 characters by default.
+21 characters by default, though this size is variable (see below).
 
 ```reason
 open NanoId
@@ -55,11 +58,21 @@ open NanoId
 let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
 ```
 
+If you want to reduce the ID size (and increase collision probability), you can
+pass the size as an argument. You can also increase the ID size (to a maximum of
+36).
+
+```reason
+open NanoId
+
+let id = nanoid(~size=10, ()); // "1s_t232nj_"
+```
+
 ### Custom length or alphabet
 
-If you want to reduce the ID size (and increase collision probability), you can
-pass the size as an argument. Likewise, if you want to use a different alphabet,
-you can pass the alphabet as a second argument.
+Likewise, if you want to use a different alphabet, you can use the
+`customAlphabet` function. Note that this function also takes a `size`
+parameter.
 
 ```reason
 open NanoId
