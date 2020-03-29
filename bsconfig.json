@@ -2,9 +2,10 @@
   "name": "re-nanoid",
   "version": "0.2.0",
   "namespace": false,
+  "files": "*.re",
   "sources": "js",
   "package-specs": {
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   },
   "refmt": 3,
