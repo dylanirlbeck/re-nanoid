@@ -1,7 +1,7 @@
 {
   "name": "@dylanirlbeck/re-nanoid",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": " A tiny, secure, URL-friendly, unique string ID generator for Reason/OCaml",
   "repository": {
     "type": "git",
@@ -23,8 +23,7 @@
   "devDependencies": {
     "bs-platform": "^7.2.2"
   },
-  "peerDependencies": {
-    "nanoid": "^3.0.1",
-    "bs-platform": "^7.2.2"
+  "dependencies": {
+    "nanoid": "^3.0.1"
   }
 }
