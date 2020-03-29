@@ -44,8 +44,8 @@ Coming soon...
 
 ## Usage
 
-**As of now, the following examples work for BuckleScript. The Native library
-will be released soon.**
+> As of now, the following examples work for BuckleScript. The Native library
+> will be released soon.
 
 ### Simple
 
@@ -53,7 +53,7 @@ The main module uses URL-friendly symbols (`A-Za-z0-9_-`) and returns an ID with
 21 characters by default, though this size is variable (see below).
 
 ```reason
-open NanoId
+open NanoId;
 
 let id = nanoid(); // "V1StGXR8_Z5jdHi6B-myT"
 ```
@@ -63,7 +63,7 @@ pass the size as an argument. You can also increase the ID size (to a maximum of
 36).
 
 ```reason
-open NanoId
+open NanoId;
 
 let id = nanoid(~size=10, ()); // "1s_t232nj_"
 ```
@@ -75,15 +75,36 @@ Likewise, if you want to use a different alphabet, you can use the
 parameter.
 
 ```reason
-open NanoId
+open NanoId;
 
 let alphabet = "#$@jasssfaª•¶";
-let size = 15;
+let size = 7;
 
-let id = nanoid(~size, ~alphabet, ());
+let nanoid = customAlphabet(~size, ~alphabet, ());
+
+let id = nanoid(); // "jfa##$·"
 ```
 
 > Note the use of the `()` as the last parameter of the function call.
+
+### Custom random bytes generator
+
+> Note that this function might not work yet.
+
+`customRandom` allows you to create a `nanoid` and replace the default random
+bytes generator.
+
+```reason
+open NanoId;
+
+let rbg = size: int => {
+  // Put generator logic here
+};
+
+let nanoid = customRandom(~alphabet="abcdef", ~size=10, rbg, ());
+
+let id = nanoid(); // "fbaefaadeb"
+```
 
 ## Contributing
 

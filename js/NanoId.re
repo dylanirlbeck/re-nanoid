@@ -8,15 +8,17 @@ type uInt8Array = array(int);
 [@bs.module "nanoid"] external nanoid: (~size: int=?, unit) => t = "nanoid";
 
 [@bs.module "nanoid"]
-external customAlphabet: (~alphabet: string, ~size: int, unit) => t =
+external customAlphabet: (~alphabet: string, ~size: int, unit, unit) => t =
   "customAlphabet";
 
+// TODO make sure this works
 [@bs.module "nanoid"]
 external customRandom:
   (
     ~alphabet: string,
     ~size: int,
     ~random: (~bytes: int) => uInt8Array,
+    unit,
     unit
   ) =>
   t =
