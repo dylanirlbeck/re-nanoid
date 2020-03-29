@@ -1,5 +1,7 @@
 # re-nanoid
 
+[![npm](https://img.shields.io/npm/v/%40dylanirlbeck%2Fre-nanoid.svg)](https://www.npmjs.com/package/%40dylanirlbeck%2Fre-nanoid)
+
 A tiny, secure, URL-friendly, unique string ID generator for ReasonML/OCaml,
 inspired by [`ai/nanoid`](https://github.com/ai/nanoid).
 
