@@ -1,5 +1,19 @@
 {
-  "esy": { "buildsInSource": "unsafe" },
-  "devDependencies": { "@opam/ocamlformat": "0.10", "ocaml": "4.07.x" },
-  "dependencies": { "@reason-native/rely": "^3.2.1" }
+  "name": "re-nanoid",
+  "version": "0.2.1",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "dependencies": {
+    "@opam/dune": "1.11.4",
+    "refmterr": "*"
+  },
+  "devDependencies": {
+    "ocaml": "4.6.1000",
+    "@opam/merlin": "*",
+    "@opam/dune-release": "*"
+  },
+  "scripts": {
+    "watch": "esy dune build @all -p #{self.name} --watch"
+  }
 }
