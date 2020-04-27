@@ -1,0 +1,4 @@
+(library
+  (name NanoId)
+  (public_name re-nanoid)
+)
