@@ -8,6 +8,6 @@ bs-platform@^7.2.2:
   integrity sha512-PWcFfN+jCTtT/rMaHDhKh+W9RUTpaRunmSF9vbLYcrJbpgCNW6aFKAY33u0P3mLxwuhshN3b4FxqGUBPj6exZQ==
 
 nanoid@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.0.1.tgz#8fb66b6910902327d4a47f623f9a3e502d563edf"
-  integrity sha512-y5gyHbIZQUaim/PrgYLd27MPoDIbGk9Yv5WeWLzFcfDxdV0svMV6geY6G/z/gWrP+OiBrj4SJ+z3Tpyn6IaMOA==
+  version "3.1.31"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.31.tgz#f5b58a1ce1b7604da5f0605757840598d8974dc6"
+  integrity sha512-ZivnJm0o9bb13p2Ot5CpgC2rQdzB9Uxm/mFZweqm5eMViqOJe3PV6LU2E30SiLgheesmcPrjquqraoolONSA0A==
